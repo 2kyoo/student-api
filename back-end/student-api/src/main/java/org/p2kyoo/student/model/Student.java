@@ -9,7 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.p2kyoo.student.model.enums.Gender;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -19,9 +19,9 @@ import java.time.LocalDate;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
-    private String name;
+    private String fullName;
 
     private String phoneNumber;
 
@@ -30,10 +30,10 @@ public class Student {
     private int age;
 
     @CreationTimestamp
-    private LocalDate created;
+    private LocalDateTime createdAt;
 
     @UpdateTimestamp
-    private LocalDate updated;
+    private LocalDateTime updatedAt;
 
     @Enumerated(EnumType.STRING)
     private Gender gender;
