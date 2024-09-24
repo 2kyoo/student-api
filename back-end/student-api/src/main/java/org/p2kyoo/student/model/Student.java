@@ -1,13 +1,12 @@
 package org.p2kyoo.student.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.p2kyoo.student.model.enums.Gender;
 
 import java.time.LocalDate;
@@ -30,10 +29,13 @@ public class Student {
 
     private int age;
 
+    @CreationTimestamp
     private LocalDate created;
 
+    @UpdateTimestamp
     private LocalDate updated;
 
+    @Enumerated(EnumType.STRING)
     private Gender gender;
 
 }
