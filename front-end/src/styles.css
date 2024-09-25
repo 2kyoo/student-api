@@ -3,3 +3,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');/* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://localhost:4200/bg.jpg");
+  background-position: center;
+
+}

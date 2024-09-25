@@ -1,6 +1,18 @@
 .table{
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
   margin-top: 50px;
+}
+
+.btn {
+  margin-right: 10px;
+
+}
+
+.new-student {
+  padding: 20px;
+  width: 400px;
+  margin-left: 330px;
+  margin-top: 40px;
 }
