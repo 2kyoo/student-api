@@ -11,3 +11,22 @@
 .manageLog button {
   margin-left: 9px;
 }
+
+.navbar-brand{
+  padding: 1.2vh 8vh;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Concert One', cursive;
+  width:20%;
+  color: white;
+}
+.searchbox {
+  margin-left: 200px;
+  width: 400px;
+}
+
+.btn {
+  color: white;
+}
+
+
