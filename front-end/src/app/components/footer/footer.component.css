@@ -1,5 +1,10 @@
 .card {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
+}
+
+.footer {
+  background-color: #544a4a;
+  color: white;
 }
