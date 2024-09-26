@@ -8,5 +8,8 @@ export const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'control', component: OptionsComponent},
   {path: 'students', component: StudentComponent},
+  {path: '', component: StudentComponent},
+  {path: '**', component: StudentComponent},
+
 
 ];
