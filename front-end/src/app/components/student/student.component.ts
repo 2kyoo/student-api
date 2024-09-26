@@ -20,6 +20,10 @@ export class StudentComponent {
 
   constructor(private studentService: StudentService) {
   }
+
+  ngOnInit(): void {
+    this.getStudents();
+  }
   getStudents() {
     this.studentService.getStudents().subscribe(
       data => this.students = data
