@@ -13,18 +13,20 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Male</td>
-    <td>22</td>
-    <td>010000255748</td>
-    <td>Cairo,eg</td>
+
+  <tr *ngFor="let s of students">
+    <th scope="row">{{s.id}}</th>
+    <td>{{s.fullName}}</td>
+    <td>{{s.gender}}</td>
+    <td>{{s.age}}</td>
+    <td>{{s.phoneNumber}}</td>
+    <td>{{s.address}}</td>
     <td>
       <button class="btn btn-success" routerLink="/control">update</button>
       <button class="btn btn-danger">delete</button>
     </td>
   </tr>
+
   </tbody>
 </table>
 </section>

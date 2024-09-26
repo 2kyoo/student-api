@@ -38,4 +38,11 @@ public class Student {
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
+    public Student(String fullName, String phoneNumber, String address, int age, Gender gender) {
+        this.fullName = fullName;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.age = age;
+        this.gender = gender;
+    }
 }
