@@ -6,7 +6,7 @@
   background-color: black;
   color: white;
   padding: 19px 15px 20px;
-  position: fixed;
+  position: relative;
   margin-top: 100px;
   height: 100px;
 }

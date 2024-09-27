@@ -3,18 +3,18 @@
     <a class="navbar-brand" href="#">eStudent</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="isAuthenticatedUser()">
       <li class="nav-item students">
         <a class="nav-link active" aria-current="page" routerLink="/students">Students</a>
       </li>
       </ul>
-      <form class="d-flex">
+      <form class="d-flex" *ngIf="isAuthenticatedUser()">
         <input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
       <div class="manageLog">
         <button class="btn btn-outline-success" routerLink="login" type="submit">Log in</button>
-        <button class="btn btn-outline-danger" type="submit">Log out</button>
+        <button class="btn btn-outline-danger" *ngIf="isAuthenticatedUser()" type="submit">Log out</button>
       </div>
     </div>
   </div>
